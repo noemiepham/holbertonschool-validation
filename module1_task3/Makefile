@@ -1,3 +1,4 @@
+SHELL := /bin/bash
 build: ## Create new site
 	@hugo
 clean: ## clean folder post
@@ -7,3 +8,5 @@ post: ## create new post
 	@sed -i 's/title: .*/title:"$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 help: ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+dump:
+    ./setup.sh
