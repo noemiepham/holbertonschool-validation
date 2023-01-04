@@ -1,4 +1,6 @@
-#!/bin/bash
-FROM ubuntu:18.04
-RUN apt-get -y update
-RUN  apt-get install hugo
+#!/bin/sh
+
+ubuntu:18.04
+install hugo
+
+echo "recipe for target 'build' failed"
