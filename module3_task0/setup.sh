@@ -1,4 +1,3 @@
-#!/bin/bash
 # Update and install 'Hugo' and 'Make'
 apt-get update && apt-get install -y hugo make
 
@@ -11,5 +10,6 @@ curl -Lo install_hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.
 # Install the latest version of 'Hugo'
 apt-get install ./install_hugo.deb
 
+rm hugo.deb
 # Build the website
 make build
