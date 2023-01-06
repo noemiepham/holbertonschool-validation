@@ -10,3 +10,5 @@ help: ## Show this help.
 
 YAML: ##syntax to define the workflow.
 
+package: ##package
+
