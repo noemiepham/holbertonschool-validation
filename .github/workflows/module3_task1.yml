@@ -16,7 +16,7 @@ jobs:
         run: |
           cd module3_task1
           chmod 755 setup.sh
-          sudo ./setup.sh
+          ./setup.sh
       - name: Test hugo build
         run: |
           cd module3_task1
